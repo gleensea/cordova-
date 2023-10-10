@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #fff;
+    font-size: 16px;
+}
+.sidebar{
+    position: fixed;
+    width: 340px;
+    background-color: black;
+}
+.globalnav{
+    padding: 0;
+}
+.globalnav li{
+    list-style: none;
+}
+.globalnav{
+    
+}
+.globalnav li a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+}
+.globalnav li:hover{
+    border-bottom: 1px solid yellowgreen;
+}
+.globalnav li a:hover{
+    text-decoration: none;
+    color: yellowgreen;
+}
+/* .main{
+    margin-left: 380px;
+    padding: 10px;
+} */
+.main{
+}
+.meimg img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    float: left;
+    margin: 50px;
+}
+.ask{
+    margin-top: 50px;
+}
+.skill{
+    padding-bottom: 40px;
+}
+.skill-contents{
+    list-style: none;
+}
+.skill-contents li{
+    padding: 5px;
+    overflow: hidden;  
+    width: 500px;
+}
+.skill-contents li:nth-child(odd){
+    background-color: #e6d8d8;
+}
+.logo{
+    text-align: center;
+}
+.logo a{
+    text-decoration: none;
+    color: #FFF;
+}
+.maincopy
+{
+    clear: both;
+    font-size: 1.5rem;
+    margin: 40px;
+}
+footer{
+    border-top: 2px solid #666;
+    text-align: right;
+}
+
+.listA .container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.listA article{
+    display: flex;
+    flex: 1 1 300px;
+}
+.listA a{
+    flex: 1;
+    margin: 10px;
+    display: block;
+    border: 1px solid #bbb;
+    color: #000;
+    text-decoration: none;
+}
+.listA a:hover{
+    opacity: 0.8;
+}
+.listA .photo{
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+.listA h2, p{
+    font-size: 16px;
+    padding:0 10px;
+}
