@@ -94,12 +94,12 @@ bun.js는 성능 최적화에 중점을 둔 라이브러리로, 빠른 로딩 �
 
 <h2>bun.js의 사용법</h2>
 <ol>
-<li>1. 설치<br>
+<li> 설치<br>
 &nbsp&nbsp bun.js를 사용하기 위해서는 먼저 해당 라이브러리를 설치해야 합니다. npm 또는 yarn을 통해 간편하게 설치할 수 있습니다.<br>
 
 &nbsp&nbsp npm install bun
 </li>
-<li>2. 설정<br>
+<li>설정<br>
 설치가 완료되면, 프로젝트의 설정 파일에서 bun.js를 설정해야 합니다. 이때, 필요한 번들링 옵션과 모듈 관리 설정을 추가할 수 있습니다.<br>
 
 // bun.config.js<br>
@@ -115,20 +115,21 @@ module.exports = {<br>
   },<br>
 };<br>
 </li>
-3. 사용 예제
-bun.js를 사용한 간단한 예제를 살펴보겠습니다. 아래 코드는 bun.js를 활용하여 간단한 웹 애플리케이션을 번들링하는 예제입니다.
+<li>사용 예제<br>
+bun.js를 사용한 간단한 예제를 살펴보겠습니다. 아래 코드는 bun.js를 활용하여 간단한 웹 애플리케이션을 번들링하는 예제입니다.<br>
 
-// app.js
+// app.js<br>
 
-import { createApp } from 'bun';
+import { createApp } from 'bun';<br>
 
-const app = createApp();
+const app = createApp();<br>
 
-app.route('/', () => {
-  // 루트 경로 처리
-});
+app.route('/', () => {<br>
+  // 루트 경로 처리<br>
+});<br>
 
-app.mount('#app');
+app.mount('#app');<br>
+</li>
 </ol>
-결론
+<h2>결론</h2>
 bun.js를 활용한 웹 애플리케이션 개발은 더욱 효율적이고 성능 최적화된 방법을 제공합니다. 이 라이브러리를 사용하면 코드 번들링과 모듈 관리 작업을 손쉽게 수행할 수 있으며, 웹 애플리케이션의 성능을 향상시킬 수 있습니다. JavaScript 개발자들에게 bun.js를 고려해보고, 프로젝트에 적용하여 개발 생산성과 성능을 향상시켜보세요.
