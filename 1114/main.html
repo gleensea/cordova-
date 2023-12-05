@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko" class="windows10 chrome">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="title" content="(주)티아이에스에스">
+    <meta http-equiv="publisher" content="MAILPLUG Inc.">
+
+    <meta name="description" content="설명">
+    <meta name="keywords" content="키워드">
+
+    <meta property="og:title" content="(주)티아이에스에스">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="설명">
+    <meta property="og:url" content="http://localhost">
+
+
+
+
+
+    <link rel="icon" href="/public/img/favicon/10page_favicon.png">
+    <link rel="shortcut_icon" href="/public/img/favicon/10page_favicon.png">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/jquery-ui/jquery-ui.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/fonts/notokr/notokr.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome/css/all.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/all.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/fontawesome.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/brands.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/solid.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/flag-icon-css/css/flag-icon.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/css/animate.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/js/slick/slick-theme.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/fullcalendar-3.10.0/fullcalendar.min.css?ver=2308.2">
+
+    <link rel="stylesheet" href="/assets/css/global.css?ver=2308.2&t=1701758552">
+    <link rel="stylesheet" href="/public/custom.css?ver=2308.2&t=1701758552">
+
+    <script src="/assets/jquery-3.4.1.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery.base64.min.js?ver=2308.2"></script>
+    <script src="/assets/js/bootstrap.min.js?ver=2308.2"></script>
+    <script src="/assets/js/slick/slick.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.i18n-ko.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.extend.js?ver=2308.2&t=1701758552"></script>
+    <script src="/ckeditor/ckeditor.js?ver=2308.2"></script>
+    <script src="/ckeditor/config.js?ver=2308.2"></script>
+    <script src="/assets/js/global.js?ver=2308.2&t=1701758552"></script>
+    <script src="/assets/fullcalendar-3.10.0/lib/moment.min.js?ver=2308.2"></script>
+    <script src="/assets/fullcalendar-3.10.0/fullcalendar.min.js?ver=2308.2"></script>
+    <script src="/assets/fullcalendar-3.10.0/gcal.js"></script>
+    <script src="/assets/fullcalendar-3.10.0/locale/ko.js"></script>
+    <script src="/assets/js/require.min.js?ver=2308.2"></script>
+
+    <title>(주)티아이에스에스</title>
+    <link rel="canonical" href="http://localhost">
+</head>
+
+<body id="site">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- 메뉴 상단 영역 시작 //-->
+        <!-- 메뉴 상단 영역 끝 //-->
+        <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar .navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="/public/img/logo/logo.png" class="img-responsive" alt="LOGO">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" id="gnb_63">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">회사소개 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_64"><a href="/page/about01.html" target="_self">인사말</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="gnb_55">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SC사업부 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_59"><a href="/page/infra04.html" target="_self">WEB/WAS</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="gnb_60">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SI사업부 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_61"><a href="/page/business01.html" target="_self">보안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메뉴 하단 영역 시작 //-->
+        <!-- 메뉴 하단 영역 끝 //-->
+    </nav>
+    <main id="main_wrapper">
+        <div id="mainCarousel" class="carousel slide is_fade" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mainCarousel" data-slide-to="1" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active" style="background-image:url(/public/img/slide/slide02.jpg);"
+                    data-target="_self">
+                    <div class="carousel-caption">
+                        <h1>(주)티아이에스에스</h1>
+                        <p>기술개발 및 최고의 고객만족 서비스의 구현을 <br class="hidden-xs">위하여 최선을 다하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image:url(/public/img/slide/slide01.jpg);" data-target="_self">
+                    <div class="carousel-caption">
+                        <h1>(주)티아이에스에스</h1>
+                        <p>기술개발 및 최고의 고객만족 서비스의 구현을 <br class="hidden-xs">위하여 최선을 다하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#mainCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#mainCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>
+                            <span>Move customer's mind by skill</span>
+                            기술로 고객의 마음을 움직이는 기업
+                        </h3>
+                    </div>
+                    <div class="col-sm-4 go-wrap01">
+                        <a href="/page/infra04.html" class="inner">
+                            <h5>SC사업부
+                                <small>바로가기</small>
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 go-wrap02">
+                        <a href="/page/business01.html" class="inner">
+                            <h5>SI사업부
+                                <small>바로가기</small>
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 call">
+                        <div class="inner">
+                            <p>문의전화</p>
+                            <p class="call-txt">051-743-4383</p>
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('#mainCarousel .item[data-href]').on('click', function () {
+                    var href = $(this).data('href');
+                    var target = $(this).data('target') || '_self';
+
+                    if (target == '_blank')
+                        window.open(href);
+                    else
+                        location.href = href;
+                }).on('mouseover', function () {
+                    $(this).css('cursor', 'pointer');
+                })
+            });
+        </script>
+
+        <div class="clearfix"></div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 foot-logo">
+                        <img src="/public/img/logo/footer-logo.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-10">
+                        <ul>
+                            <li><strong>(주)티아이에스에스</strong></li>
+                            <li>부산광역시 해운대구 좌동로88 울트라타워 1204호</li>
+
+                            <div class="clearfix"></div>
+                            <li>대표번호: 051-743-4383</li>
+                            <li>팩스번호: 051-743-4381</li>
+                        </ul>
+                        <ul>
+                            <li class="copy">©TISS. All rights reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('.navbar-inverse .navbar-nav > li > a').click(function () {
+
+            if ($(window).width() < 767) { } else {
+                location.href = $(this).siblings('.dropdown-menu').children('li').eq(0).children('a').attr('href');
+            }
+        });
+    </script>
+    <script>
+        // form 이 존재하는 경우
+        if ($('form[id^="form_"').length > 0) {
+            var mailplug_token = 'mailplug_token';
+
+            // csrf 토큰 hidden 값이 없는 경우 생성
+            if ($("[name='mailplug_token']").length == 0) {
+                $('form[id^="form_"').append('<input type="hidden" name="mailplug_token" value="" />');
+            }
+
+            // csrf 토큰 재발급
+            $("[name='mailplug_token']").val(passport().mailplug_token);
+        }
+    </script>
+</body>
+
+</html>

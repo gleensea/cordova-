@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko" class="windows10 chrome">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="title" content="(주)티아이에스에스">
+    <meta http-equiv="publisher" content="MAILPLUG Inc.">
+
+    <meta name="description" content="설명">
+    <meta name="keywords" content="키워드">
+
+    <meta property="og:title" content="(주)티아이에스에스">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="설명">
+    <meta property="og:url" content="http://localhost">
+
+
+
+
+
+    <link rel="icon" href="/public/img/favicon/10page_favicon.png">
+    <link rel="shortcut_icon" href="/public/img/favicon/10page_favicon.png">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/jquery-ui/jquery-ui.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/fonts/notokr/notokr.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome/css/all.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/all.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/fontawesome.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/brands.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/fontawesome6/css/solid.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/adm/modules/flag-icon-css/css/flag-icon.min.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/css/animate.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/js/slick/slick-theme.css?ver=2308.2">
+    <link rel="stylesheet" href="/assets/fullcalendar-3.10.0/fullcalendar.min.css?ver=2308.2">
+
+    <link rel="stylesheet" href="/assets/css/global.css?ver=2308.2&t=1701762874">
+    <link rel="stylesheet" href="/public/custom.css?ver=2308.2&t=1701762874">
+
+    <script src="/assets/jquery-3.4.1.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery.base64.min.js?ver=2308.2"></script>
+    <script src="/assets/js/bootstrap.min.js?ver=2308.2"></script>
+    <script src="/assets/js/slick/slick.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.min.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.i18n-ko.js?ver=2308.2"></script>
+    <script src="/assets/jquery-ui/jquery-ui.extend.js?ver=2308.2&t=1701762874"></script>
+    <script src="/ckeditor/ckeditor.js?ver=2308.2"></script>
+    <script src="/ckeditor/config.js?ver=2308.2"></script>
+    <script src="/assets/js/global.js?ver=2308.2&t=1701762874"></script>
+    <script src="/assets/fullcalendar-3.10.0/lib/moment.min.js?ver=2308.2"></script>
+    <script src="/assets/fullcalendar-3.10.0/fullcalendar.min.js?ver=2308.2"></script>
+    <script src="/assets/fullcalendar-3.10.0/gcal.js"></script>
+    <script src="/assets/fullcalendar-3.10.0/locale/ko.js"></script>
+    <script src="/assets/js/require.min.js?ver=2308.2"></script>
+
+    <title>(주)티아이에스에스</title>
+    <link rel="canonical" href="http://localhost">
+</head>
+
+<body id="site">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- 메뉴 상단 영역 시작 //-->
+        <!-- 메뉴 상단 영역 끝 //-->
+        <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar .navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a href="../main.html" class="navbar-brand">
+                    <img src="/public/img/logo/logo.png" class="img-responsive" alt="LOGO">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" id="gnb_63">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">회사소개 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_64"><a href="/page/about01.html" target="_self">인사말</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="gnb_55">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SC사업부 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_59"><a href="/page/infra04.html" target="_self">WEB/WAS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="gnb_60">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SI사업부 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li id="snb_61"><a href="/page/business01.html" target="_self">보안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메뉴 하단 영역 시작 //-->
+        <!-- 메뉴 하단 영역 끝 //-->
+    </nav>
+    <div class="subpage" id="business01">
+        <div class="pageheader">
+            <div class="main-text">
+                <h1>SI사업부</h1>
+                <ol class="breadcrumb">
+                    <li>Home</li>
+                    <li>SI사업부</li>
+                    <li class="active">보안</li>
+                </ol>
+            </div>
+            <div class="sub_nav">
+                <div class="container">
+                    <ul>
+                        <li class="active"><a href="/page/business01">보안</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container sub-inner">
+            <div class="row title">
+                <div class="col-sm-12">
+                    <h2>보안</h2>
+                </div>
+            </div>
+            <div class="row banner-wrap">
+                <div class="col-sm-12 title-text">
+                    <div class="banner-txt">
+                        <p>보안솔루션</p>
+                        <small>개인정보유출, 해킹, 바이러스 등의 보안 공격이 다양해짐에 따라 기업의 IT자산 및 보안 위협으로부터 대응하기 위한 솔루션</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row business01">
+                <div class="col-sm-12">
+                    <div class="banner-title">
+                        <h3>
+                            네트워크 보안 (방화벽, IPS, DDoS)
+                        </h3>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4">
+                    <div class="banner">
+                        <img src="/public/img/sub/banner1-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>국내 보안 브랜드 1위, 강력한 성능</li>
+                                <li>정교한 애플리케이션 제어, 업무 생산성 향상</li>
+                                <li>보안위협 대응력 강화된 VPN, 다양한 공격 유형 방어</li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.ahnlab.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner">
+                        <img src="/public/img/sub/banner1-2.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>네트워크 보안 시장의 최고 점유율 보유</li>
+                                <li>어플리케이션 취약점 대응, 머신 러닝을 활용한 보안위협 대응, 보안 처리 리소스 활용 극대화</li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.paloaltonetworks.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner">
+                        <img src="/public/img/sub/banner1-3.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>업계 최고 수준의 위협 방지 기능 제공</li>
+                                <li>다양한 위협 대응, 효율적인 정책 운영, 클라우드,네트워크, 엔드포인트 통합관리</li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.checkpoint.com" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4">
+                    <div class="banner">
+                        <img src="/public/img/sub/banner1-4.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>Cisco Firepower® NGFW(Next-Generation Firewall)</li>
+                                <li>통합 관리 기능을 갖춘 업계 최초의 완전 통합형 위협 중심 차세대 방화벽</li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.cisco.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner">
+                        <img src="/public/img/sub/banner1-5.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>시스템 및 네트워크 자원에 대한 다양한 형태의
+                                    침입 행위를 사용자,멀웨어, 어플리케이션 기반 상황인지</li>
+                                <li>엔진과 평판기반으로 실시간 탐지/분석/차단을 수행</li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="http://www.wins21.co.kr/main/main.html" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row business01">
+                <div class="col-sm-4">
+                    <div class="banner-title">
+                        <h3>
+                            웹 방화벽
+                        </h3>
+                    </div>
+                    <div class="banner">
+                        <img src="/public/img/sub/banner2-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    빠르고 지능적인 듀얼 탐지 엔진으로 어떠한
+                                    웹 공격도 실시간으로 차단하며, 업계 최고 40Gbps
+                                    성능으로 대규모 사이트에서도 안정적인 차세대 웹방화벽
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.piolink.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner-title">
+                        <h3>
+                            문서보안
+                        </h3>
+                    </div>
+                    <div class="banner">
+                        <img src="/public/img/sub/banner3-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    중요 내용을 담은 데이터 자체를 암호화해
+                                    권한 내에서만 사용하도록 제어하는 데이터 중심의
+                                    보안 솔루션
+                                </li>
+                                <li>
+                                    정보 유출 위협과 사이버 공격에
+                                    대응하는 최고 수준 통합 문서보안 솔루션
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.fasoo.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner-title">
+                        <h3>
+                            APT 솔루션
+                        </h3>
+                    </div>
+                    <div class="banner">
+                        <img src="/public/img/sub/banner4-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    네트워크, 이메일, 엔드포인트 등 데이터가 이동하는
+                                    구간에서 제로데이를 비롯한 지능형 위협 차단
+                                </li>
+                                <li>
+                                    러닝머신과 전 세계에서 발생하는 정보를 수집하여
+                                    인텔리전스 기반의 방어, 탐지, 대응
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.fireeye.com" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row business01">
+                <div class="col-sm-4">
+                    <div class="banner-title">
+                        <h3>
+                            무선 인증 및 보안
+                        </h3>
+                    </div>
+                    <div class="banner">
+                        <img src="/public/img/sub/banner5-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    무선 네트워크 인프라 구축의 적절성을 모니터링하고,
+                                    모든 WLAN 표준 프로토콜 장비의 보안 취약점을
+                                    정확하게 탐지, 차단하여 안전하고 효율적인
+                                    무선 네트워크 환경을 구축하는 솔루션
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="https://www.secureletter.co.kr/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="banner-title">
+                        <h3>
+                            망연계 시스템
+                        </h3>
+                    </div>
+                    <div class="banner">
+                        <img src="/public/img/sub/banner6-1.jpg" alt="" class="img-reponsive center-block">
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    망 분리된 환경에서 보안영역과 비보안영역 간의 실시간 데이터 또는 파일을 보안 정책에 따라 전송하는 솔루션
+                                </li>
+                                <li>
+                                    업무 편의성 향상, 중계 트래픽 분석, 망연계 통신 상세 분석, APT 대응 및 위협탐지 보안검사, 다양한 리포트 제공
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view">
+                            <a href="http://secuever.com/" target="_blank">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 foot-logo">
+                        <img src="/public/img/logo/footer-logo.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-sm-10">
+                        <ul>
+                            <li><strong>(주)티아이에스에스</strong></li>
+                            <li>부산광역시 해운대구 좌동로88 울트라타워 1204호</li>
+
+                            <div class="clearfix"></div>
+                            <li>대표번호: 051-743-4383</li>
+                            <li>팩스번호: 051-743-4381</li>
+                        </ul>
+                        <ul>
+                            <li class="copy">©TISS. All rights reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $('.navbar-inverse .navbar-nav > li > a').click(function () {
+
+            if ($(window).width() < 767) { } else {
+                location.href = $(this).siblings('.dropdown-menu').children('li').eq(0).children('a').attr('href');
+            }
+        });
+    </script>
+    <script>
+        // form 이 존재하는 경우
+        if ($('form[id^="form_"').length > 0) {
+            var mailplug_token = 'mailplug_token';
+
+            // csrf 토큰 hidden 값이 없는 경우 생성
+            if ($("[name='mailplug_token']").length == 0) {
+                $('form[id^="form_"').append('<input type="hidden" name="mailplug_token" value="" />');
+            }
+
+            // csrf 토큰 재발급
+            $("[name='mailplug_token']").val(passport().mailplug_token);
+        }
+    </script>
+</body>
+
+</html>
