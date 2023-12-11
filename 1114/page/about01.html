@@ -165,6 +165,10 @@
             center: new naver.maps.LatLng(35.172, 129.175),
             zoom: 10
         };
+   	var marker = new naver.maps.Marker({
+	    position: new naver.maps.LatLng(35.172, 129.175),
+	    map: map
+	});
         var map = new naver.maps.Map('map', mapOptions); // id와 option
     </script>
         </div>
