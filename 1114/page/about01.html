@@ -167,6 +167,10 @@
 		    zoom: 12, //지도의 초기 줌 레벨
 		    minZoom: 5, //지도의 최소 줌 레벨
 		    maxZoom: 13,
+		    zoomControl: true, //줌 컨트롤의 표시 여부
+            	    zoomControlOptions: { //줌 컨트롤의 옵션
+                    	position: naver.maps.Position.TOP_RIGHT
+		    }
                 });
                 var marker = new naver.maps.Marker({
                     position: new naver.maps.LatLng(35.172, 129.175),
